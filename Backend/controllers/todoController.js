@@ -2,9 +2,9 @@ const todoRepository=require('../repositories/todoRepository')
 
 async function createTodoList(req,res) {
 
-    const {title,description}=req.body;
+    const {title,description,completed}=req.body;
     try{
-        const todo=await todoRepository.createTodoList(title,description);
+        const todo=await todoRepository.createTodoList(title,description,completed);
         res.status(201).json(todo);
     }
     catch(error){

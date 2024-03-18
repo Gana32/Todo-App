@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- You can replace the symbol of todo with an icon or SVG -->
+        <span class="navbar-brand-symbol">✓</span> <!-- Symbol of Todo -->
+        <span class="navbar-brand-text">To-Do List</span>
+      </a>
+  
+      <!-- <button class="btn btn-orange rounded-pill" (click)="createTask()">Create Todo</button> -->
+      <button *ngIf="showcreatebutton"  (click)="createtodo()" class="btn btn-orange rounded-pill" >Create Todo</button>
+    </div>
+  </nav>
+  

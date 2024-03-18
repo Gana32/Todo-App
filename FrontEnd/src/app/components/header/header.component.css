@@ -1,0 +1,24 @@
+.navbar {
+    border-radius: 0;
+  }
+  
+  .navbar-brand-symbol {
+    font-size: 24px;
+  }
+  
+  .navbar-brand-text {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .btn-orange {
+    background-color: #FFA500;
+    border-color: #FFA500;
+    color: #fff;
+  }
+  
+  .btn-orange:hover {
+    background-color: #FF7F00;
+    border-color: #FF7F00;
+  }
+  

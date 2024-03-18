@@ -6,11 +6,12 @@ const bodyParser = require('body-parser');
 const getMongoUri = require('./configs/dbConfig');
 const mongoose=require('mongoose');
 //dotenv.config();
-const routes=require('./routes/todoRoutes')
+const routes=require('./routes/todoRoutes');
+const cors=require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-//app.use(cors());
+app.use(cors());
 app.use('/todo',routes);
 
 const port = process.env.PORT;

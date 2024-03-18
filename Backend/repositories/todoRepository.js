@@ -1,11 +1,13 @@
 const Todo = require("../models/todo");
 
-async function createTodoList(Title,description){
+async function createTodoList(Title,description,completed){
     const newTodoList = new Todo({
         title: Title,
-        description: description
+        description: description,
+        completed: Boolean(completed)
     });
     await newTodoList.save();
+    // console.log(title, description, completed)
     return newTodoList;
 }
 

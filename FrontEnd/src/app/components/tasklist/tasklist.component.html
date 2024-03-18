@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Completed</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <tr *ngFor="let tassk of task">
+        <td>{{ tassk.title }}</td>
+        <td>{{ tassk.description }}</td> 
+        <td>{{ tassk.completed ? 'Yes' : 'No' }}</td>
+         <td> 
+           <button (click)="updateTask(tassk._id)" class="btn btn-primary">Update</button> &nbsp;&nbsp;&nbsp;&nbsp;
+          <button (click)="deletetask(tassk._id)" class="btn btn-danger">Delete</button>
+         </td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+
+  
